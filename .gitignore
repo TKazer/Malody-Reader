@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+/.vs/Malody-Reader/v17
+/Debug
+/Malody-Reader/x64/Debug
+/Malody-Reader/Debug
+/x64/Debug
