@@ -1,4 +1,5 @@
 - [介绍](#Malody-Reader)
+- [示例](#Demo)
 - [1.类和函数](#ClassAndFunctions)
   * [(1) 游戏主数据](#ReaderGame)
   * [(2) 游戏中数据](#Reader_DataInGame)
@@ -11,6 +12,48 @@
 # Malody-Reader
 
 Using for reading data from malody.
+
+# Demo
+
+```c++
+	if (Malody::MalodyReader::get().Init())
+	{
+		std::cout << "Reader init succeed." << std::endl;
+	}
+	else
+	{
+		std::cout << "Reader init failed." << std::endl;
+		system("pause");
+		return 0;
+	}
+
+	std::cout << "--------" << std::endl;
+
+	Malody::MapData Data;
+	Malody::OnlinePlayer Player;
+
+	Malody::MalodyReader::get().Player.GetData(Player);
+	std::cout << "ID:" << Player.ID << std::endl;
+	std::cout << "Name:" << Player.Name << std::endl;
+	std::cout << "--------" << std::endl;
+
+	Malody::MalodyReader::get().Map.GetData(Data);
+	std::cout << "Song:" << Data.SongName << std::endl;
+	std::cout << "Level:" << Data.LevelName << std::endl;
+	std::cout << "Artists:" << Data.Artists << std::endl;
+	std::cout << "Creator:" << Data.Creator << std::endl;
+	std::cout << "Mode:" << Data.Mode << std::endl;
+	std::cout << "BPM:" << Data.BPM << std::endl;
+	std::cout << "KeyCounts:" << Data.KeyCount << std::endl;
+	std::cout << "--------" << std::endl;
+
+	Malody::ResultData Result;
+
+	Malody::MalodyReader::get().DataInGame.GetData(Result);
+
+	Malody::MalodyReader::get().DataInResult.GetData(Result);
+
+```
 
 # ClassAndFunctions
 
