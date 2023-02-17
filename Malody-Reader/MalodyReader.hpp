@@ -5,6 +5,7 @@
 #include "Read_Game.hpp"
 #include "Read_Map.hpp"
 #include "Read_LocalPlayer.hpp"
+#include "Malody_Algorithm.hpp"
 
 namespace Malody
 {

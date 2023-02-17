@@ -9,7 +9,7 @@ int main()
 	{
 		std::cout << "Attach succeed." << std::endl;
 		std::cout << "is Active:" << PManager.IsActive() << std::endl;
-		std::cout <<"ModuleAddress:" << PManager.ModuleAddress << std::endl;
+		std::cout << "ModuleAddress:" << PManager.ModuleAddress << std::endl;
 	}
 	else
 	{
@@ -48,6 +48,8 @@ int main()
 	std::cout << "BPM:" << Data.BPM << std::endl;
 	std::cout << "KeyCounts:" << Data.KeyCount << std::endl;
 	std::cout << "--------" << std::endl;
+
+	system("pause");
 
 	return 0;
 }

@@ -1,6 +1,7 @@
 #pragma once
 #include "Struct.hpp"
 #include "Read_Base.hpp"
+#include "Malody_Algorithm.hpp"
 
 namespace Malody
 {
@@ -25,12 +26,7 @@ namespace Malody
 			if (!Process.ReadMemory<Malody::ResultData::_hitdata>(HitAddress, _t_Data.Hit))
 				return false;
 
-			// Accuracyº∆À„
-			int totalHit = _t_Data.Hit.Best + _t_Data.Hit.Cool + _t_Data.Hit.Great + _t_Data.Hit.Miss;
-			double Accuracy = _t_Data.Hit.Best + _t_Data.Hit.Cool * 0.75 + _t_Data.Hit.Great * 0.4;
-			Accuracy /= totalHit;
-
-			_t_Data.Accuracy = Accuracy;
+			_t_Data.Accuracy = Malody::Algorithm::CalcAccuracy(_t_Data.Hit);
 			_t_Data.Score = static_cast<int>(_t_Score);
 			Data = _t_Data;
 
