@@ -12,6 +12,7 @@
 # Malody-Reader
 
 Using for reading data from malody.
+It's easy to use this library to develop plugins.
 
 # Demo
 
