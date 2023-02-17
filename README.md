@@ -6,7 +6,7 @@
   * [(4) 谱面数据](#Reader_Map)
   * [(5) 玩家数据](#Reader_LocalPlayer)
   * [(5) 数据算法](#Algorithm)
-- [协议](#LICENCE)
+- [协议](#LICENSE)
 
 # Malody-Reader
 
@@ -159,7 +159,7 @@ Using for reading data from malody.
 | CalcAccuracy | 计算准确度 | 游戏游玩中打击的总准确度 |
 | CalcMM       | 计算MM值   | 计算单曲Malody metric值  |
 
-# LICENCE
+# LICENSE
 
-[MIT](https://github.com/TKazer/Malody-Reader/edit/master/LICENCE) 
+[MIT](https://github.com/TKazer/Malody-Reader/blob/master/LICENSE) 
 ![](https://img.shields.io/badge/license-MIT-blue)
