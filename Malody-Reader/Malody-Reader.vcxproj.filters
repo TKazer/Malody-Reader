@@ -53,5 +53,8 @@
     <ClInclude Include="Singleton.hpp">
       <Filter>MalodyReader</Filter>
     </ClInclude>
+    <ClInclude Include="Read_MpResultData.h">
+      <Filter>MalodyReader</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

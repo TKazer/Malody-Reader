@@ -28,7 +28,7 @@ namespace Malody
 		MODE_TAIKO		= 5, // Taiko
 		MODE_RING		= 6, // Ring
 		MODE_SLIDER		= 7, // Slieder
-		MODE_NONE		= 8,// 
+		MODE_NONE		= 8, // 
 	};
 
 	/// <summary>
@@ -98,7 +98,10 @@ namespace Malody
 	public:
 		OnlinePlayer Player;
 		ResultData Data;
-		MPData(){};
-		MPData(OnlinePlayer Player, ResultData Data):Player(Player),Data(Data){}
 	};
+
+	/// <summary>
+	/// MP玩家数量上限
+	/// </summary>
+	const int MAX_MP_PLAYER_NUM = 8;
 }

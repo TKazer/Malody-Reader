@@ -139,6 +139,7 @@
     <ClInclude Include="Read_Game.hpp" />
     <ClInclude Include="Read_LocalPlayer.hpp" />
     <ClInclude Include="Read_Map.hpp" />
+    <ClInclude Include="Read_MpResultData.h" />
     <ClInclude Include="Singleton.hpp" />
     <ClInclude Include="Struct.hpp" />
   </ItemGroup>

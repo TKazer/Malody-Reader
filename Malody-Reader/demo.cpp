@@ -49,6 +49,13 @@ int main()
 	std::cout << "KeyCounts:" << Data.KeyCount << std::endl;
 	std::cout << "--------" << std::endl;
 
+	std::vector<Malody::MPData> MpDatas;
+	Malody::MalodyReader::get().Mp.GetData(MpDatas);
+	for (auto PlayerData : MpDatas)
+	{
+		//...
+	}
+
 	system("pause");
 
 	return 0;

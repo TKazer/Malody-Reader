@@ -5,6 +5,7 @@
 #include "Read_Game.hpp"
 #include "Read_Map.hpp"
 #include "Read_LocalPlayer.hpp"
+#include "Read_MpResultData.h"
 #include "Malody_Algorithm.hpp"
 
 namespace Malody
@@ -12,13 +13,13 @@ namespace Malody
 	class MalodyReader : public Singleton<MalodyReader>
 	{
 	public:
-		Malody::ProcessManager Process;				// 进程管理
-		Malody::ReaderGame Game;					// 游戏数据获取
-		Malody::Reader_DataInGame DataInGame;		// 游戏中数据获取
-		Malody::Reader_DataInResult DataInResult;	// 结算界面数据获取
-		Malody::Reader_Map Map;						// 当前谱面数据获取
-		Malody::Reader_LocalPlayer Player;			// 本地玩家数据获取
-
+		ProcessManager Process;				// 进程管理
+		ReaderGame Game;					// 游戏数据获取
+		Reader_DataInGame DataInGame;		// 游戏中数据获取
+		Reader_DataInResult DataInResult;	// 结算界面数据获取
+		Reader_Map Map;						// 当前谱面数据获取
+		Reader_LocalPlayer Player;			// 本地玩家数据获取
+		Reader_MpResultData Mp;				// Mp结算数据获取
 	public:
 		bool Init()
 		{
