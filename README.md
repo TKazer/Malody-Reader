@@ -237,6 +237,8 @@ It's easy to use this library to develop plugins.
 | CalcAccuracy | 计算准确度 | 游戏游玩中打击的总准确度 |
 | CalcMM       | 计算MM值   | 计算单曲Malody metric值  |
 
+> [Algorithm Code](https://github.com/TKazer/Malody-Reader/blob/master/Malody-Reader/Malody_Algorithm.hpp)
+
 # LICENSE
 
 [MIT](https://github.com/TKazer/Malody-Reader/blob/master/LICENSE) 
