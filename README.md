@@ -6,7 +6,8 @@
   * [(3) 结算数据](#Reader_DataInResult)
   * [(4) 谱面数据](#Reader_Map)
   * [(5) 玩家数据](#Reader_LocalPlayer)
-  * [(5) 数据算法](#Algorithm)
+  * [(6) MP数据](#Reader_MpPlayerData)
+  * [(7) 数据算法](#Algorithm)
 - [协议](#LICENSE)
 
 # Malody-Reader
@@ -194,6 +195,24 @@ It's easy to use this library to develop plugins.
 > 		OnlinePlayer(){}
 > 		OnlinePlayer(int ID, std::string Name) :ID(ID), Name(Name) {}
 > 	};
+> ```
+
+## Reader_MpPlayerData
+
+> 读取Mp玩家数据。
+>
+> ```c++
+>	/// <summary>
+>	/// MP玩家结算数据
+>	/// </summary>
+>	class MPData
+>	{
+>	public:
+>		OnlinePlayer Player;
+>		ResultData Data;
+>	};
+>	
+>	std::vector<MPData> MPDatas;
 > ```
 
 ## Algorithm
