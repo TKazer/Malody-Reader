@@ -18,6 +18,20 @@ It's easy to use this library to develop plugins.
 # Demo
 
 ```c++
+	Malody::ProcessManager PManager;
+	if (PManager.Attach("malody.exe")== Malody::SUCCEED)
+	{
+		std::cout << "Attach succeed." << std::endl;
+		std::cout << "is Active:" << PManager.IsActive() << std::endl;
+		std::cout << "ModuleAddress:" << PManager.ModuleAddress << std::endl;
+	}
+	else
+	{
+		std::cout << "Attach failed." << std::endl;
+		system("pause");
+		return 0;
+	}
+	
 	if (Malody::MalodyReader::get().Init())
 	{
 		std::cout << "Reader init succeed." << std::endl;
@@ -49,11 +63,12 @@ It's easy to use this library to develop plugins.
 	std::cout << "KeyCounts:" << Data.KeyCount << std::endl;
 	std::cout << "--------" << std::endl;
 
-	Malody::ResultData Result;
-
-	Malody::MalodyReader::get().DataInGame.GetData(Result);
-
-	Malody::MalodyReader::get().DataInResult.GetData(Result);
+	std::vector<Malody::MPData> MpDatas;
+	Malody::MalodyReader::get().Mp.GetData(MpDatas);
+	for (auto PlayerData : MpDatas)
+	{
+		//...
+	}
 
 ```
 
