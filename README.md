@@ -6,7 +6,8 @@
   * [(3) 结算数据](#Reader_DataInResult)
   * [(4) 谱面数据](#Reader_Map)
   * [(5) 玩家数据](#Reader_LocalPlayer)
-  * [(5) 数据算法](#Algorithm)
+  * [(6) MP数据](#Reader_MpPlayerData)
+  * [(7) 数据算法](#Algorithm)
 - [协议](#LICENSE)
 
 # Malody-Reader
@@ -17,6 +18,20 @@ It's easy to use this library to develop plugins.
 # Demo
 
 ```c++
+	Malody::ProcessManager PManager;
+	if (PManager.Attach("malody.exe")== Malody::SUCCEED)
+	{
+		std::cout << "Attach succeed." << std::endl;
+		std::cout << "is Active:" << PManager.IsActive() << std::endl;
+		std::cout << "ModuleAddress:" << PManager.ModuleAddress << std::endl;
+	}
+	else
+	{
+		std::cout << "Attach failed." << std::endl;
+		system("pause");
+		return 0;
+	}
+	
 	if (Malody::MalodyReader::get().Init())
 	{
 		std::cout << "Reader init succeed." << std::endl;
@@ -48,11 +63,12 @@ It's easy to use this library to develop plugins.
 	std::cout << "KeyCounts:" << Data.KeyCount << std::endl;
 	std::cout << "--------" << std::endl;
 
-	Malody::ResultData Result;
-
-	Malody::MalodyReader::get().DataInGame.GetData(Result);
-
-	Malody::MalodyReader::get().DataInResult.GetData(Result);
+	std::vector<Malody::MPData> MpDatas;
+	Malody::MalodyReader::get().Mp.GetData(MpDatas);
+	for (auto PlayerData : MpDatas)
+	{
+		//...
+	}
 
 ```
 
@@ -196,12 +212,32 @@ It's easy to use this library to develop plugins.
 > 	};
 > ```
 
+## Reader_MpPlayerData
+
+> 读取Mp玩家数据。
+>
+> ```c++
+>	/// <summary>
+>	/// MP玩家结算数据
+>	/// </summary>
+>	class MPData
+>	{
+>	public:
+>		OnlinePlayer Player;
+>		ResultData Data;
+>	};
+>	
+>	std::vector<MPData> MPDatas;
+> ```
+
 ## Algorithm
 
 | Name         | Using      |                          |
 | ------------ | ---------- | ------------------------ |
 | CalcAccuracy | 计算准确度 | 游戏游玩中打击的总准确度 |
 | CalcMM       | 计算MM值   | 计算单曲Malody metric值  |
+
+> [Algorithm Code](https://github.com/TKazer/Malody-Reader/blob/master/Malody-Reader/Malody_Algorithm.hpp)
 
 # LICENSE
 
