@@ -21,6 +21,9 @@
     <ClCompile Include="Malody_Algorithm.hpp">
       <Filter>MalodyReader</Filter>
     </ClCompile>
+    <ClCompile Include="Malody_Algorithm.cpp">
+      <Filter>MalodyReader</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Process.hpp">
