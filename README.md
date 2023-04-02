@@ -7,7 +7,8 @@
   * [(4) 谱面数据](#Reader_Map)
   * [(5) 玩家数据](#Reader_LocalPlayer)
   * [(6) MP数据](#Reader_MpPlayerData)
-  * [(7) 数据算法](#Algorithm)
+  * [(7) Mods](#Reader_Mods)
+  * [(8) 数据算法](#Algorithm)
 - [协议](#LICENSE)
 
 # Malody-Reader
@@ -76,7 +77,7 @@ It's easy to use this library to develop plugins.
 
 ## ReaderGame
 
-> 读取游戏主要数据。
+> 读取游戏主要数据。Read game data
 >
 > ```c++
 > 	/// <summary>
@@ -109,7 +110,7 @@ It's easy to use this library to develop plugins.
 
 ## Reader_DataInGame
 
-> 读取游戏中数据。
+> 读取游戏中数据。Read data(only in gaming)
 >
 > ```c++
 > 	/// <summary>
@@ -135,7 +136,7 @@ It's easy to use this library to develop plugins.
 
 ## Reader_DataInResult
 
-> 读取结算数据
+> 读取结算数据 Read data(only in result)
 >
 > ```c++
 > 	/// <summary>
@@ -161,7 +162,7 @@ It's easy to use this library to develop plugins.
 
 ## Reader_Map
 
-> 读取当前谱面数据
+> 读取当前谱面数据 Read current map data
 >
 > ```C++
 > 	/// <summary>
@@ -196,7 +197,7 @@ It's easy to use this library to develop plugins.
 
 ## Reader_LocalPlayer
 
-> 读取本地玩家信息。
+> 读取本地玩家信息。Read local player's data
 >
 > ```c++
 > 	/// <summary>
@@ -214,7 +215,7 @@ It's easy to use this library to develop plugins.
 
 ## Reader_MpPlayerData
 
-> 读取Mp玩家数据。
+> 读取Mp玩家数据。Read multiplay player's data
 >
 > ```c++
 >	/// <summary>
@@ -229,6 +230,29 @@ It's easy to use this library to develop plugins.
 >	
 >	std::vector<MPData> MPDatas;
 > ```
+
+## Reader_Mods
+
+> 读取Mod数据 Read mods data
+> 
+> ```c++
+>	/// <summary>
+>	/// 游玩模式 Mods
+>	/// </summary>
+>	enum Mods : DWORD
+>	{
+>		MOD_AUTO = 0x1,		// 自动游玩
+>		MOD_LUCK = 0x2,		// 随机轨道
+>		MOD_FLIP = 0x4,		// 镜像
+>		MOD_CONST = 0x8,	// 下落速度不与BPM关联
+>		MOD_DASH = 0x10,	// 速度1.2x
+>		MOD_RUSH = 0x20,	// 速度1.5x
+>		MOD_HIDE = 0x40,	// 下隐
+>		MOD_ORIGIN = 0x80,	// 原始计分
+>		MOD_SLOW = 0x100,	// 速度0.8x
+>		MOD_DEATH = 0x200	// 死亡模式
+>	};
+>```
 
 ## Algorithm
 
