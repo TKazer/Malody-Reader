@@ -1,4 +1,4 @@
-#include "MalodyReader/Malody_Algorithm.hpp"
+#include "Malody_Algorithm.hpp"
 
 double Malody::Algorithm::CalcAccuracy(const Malody::ResultData::_hitdata& Data)
 {

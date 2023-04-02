@@ -128,21 +128,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="demo.cpp" />
-    <ClCompile Include="Malody_Algorithm.cpp" />
-    <ClCompile Include="Malody_Algorithm.hpp" />
+    <ClCompile Include="Malody_Reader_Base\Malody_Algorithm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MalodyReader.hpp" />
-    <ClInclude Include="Process.hpp" />
-    <ClInclude Include="Read_Base.hpp" />
-    <ClInclude Include="Read_DataInGame.hpp" />
-    <ClInclude Include="Read_DataInResult.hpp" />
-    <ClInclude Include="Read_Game.hpp" />
-    <ClInclude Include="Read_LocalPlayer.hpp" />
-    <ClInclude Include="Read_Map.hpp" />
-    <ClInclude Include="Read_MpResultData.h" />
-    <ClInclude Include="Singleton.hpp" />
-    <ClInclude Include="Struct.hpp" />
+    <ClInclude Include="Malody_Reader_Base\Malody_Algorithm.hpp" />
+    <ClInclude Include="Malody_Reader_Base\Process.hpp" />
+    <ClInclude Include="Malody_Reader_Base\Read_Base.hpp" />
+    <ClInclude Include="Malody_Reader_Base\Read_DataInGame.hpp" />
+    <ClInclude Include="Malody_Reader_Base\Read_DataInResult.hpp" />
+    <ClInclude Include="Malody_Reader_Base\Read_Game.hpp" />
+    <ClInclude Include="Malody_Reader_Base\Read_LocalPlayer.hpp" />
+    <ClInclude Include="Malody_Reader_Base\Read_Map.hpp" />
+    <ClInclude Include="Malody_Reader_Base\Read_Mods.h" />
+    <ClInclude Include="Malody_Reader_Base\Read_MpResultData.h" />
+    <ClInclude Include="Malody_Reader_Base\Singleton.hpp" />
+    <ClInclude Include="Malody_Reader_Base\Struct.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

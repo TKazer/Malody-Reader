@@ -13,51 +13,57 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="MalodyReader\Base">
+      <UniqueIdentifier>{6523be8f-c17f-484c-af58-2e3baaf9804f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="demo.cpp">
       <Filter>DEMO</Filter>
     </ClCompile>
-    <ClCompile Include="Malody_Algorithm.hpp">
-      <Filter>MalodyReader</Filter>
-    </ClCompile>
-    <ClCompile Include="Malody_Algorithm.cpp">
-      <Filter>MalodyReader</Filter>
+    <ClCompile Include="Malody_Reader_Base\Malody_Algorithm.cpp">
+      <Filter>MalodyReader\Base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Process.hpp">
-      <Filter>MalodyReader</Filter>
-    </ClInclude>
-    <ClInclude Include="Struct.hpp">
-      <Filter>MalodyReader</Filter>
-    </ClInclude>
-    <ClInclude Include="Read_Base.hpp">
-      <Filter>MalodyReader</Filter>
-    </ClInclude>
-    <ClInclude Include="Read_Game.hpp">
-      <Filter>MalodyReader</Filter>
-    </ClInclude>
-    <ClInclude Include="Read_DataInGame.hpp">
-      <Filter>MalodyReader</Filter>
-    </ClInclude>
-    <ClInclude Include="Read_DataInResult.hpp">
-      <Filter>MalodyReader</Filter>
-    </ClInclude>
-    <ClInclude Include="Read_LocalPlayer.hpp">
-      <Filter>MalodyReader</Filter>
-    </ClInclude>
-    <ClInclude Include="Read_Map.hpp">
-      <Filter>MalodyReader</Filter>
-    </ClInclude>
     <ClInclude Include="MalodyReader.hpp">
       <Filter>MalodyReader</Filter>
     </ClInclude>
-    <ClInclude Include="Singleton.hpp">
-      <Filter>MalodyReader</Filter>
+    <ClInclude Include="Malody_Reader_Base\Malody_Algorithm.hpp">
+      <Filter>MalodyReader\Base</Filter>
     </ClInclude>
-    <ClInclude Include="Read_MpResultData.h">
-      <Filter>MalodyReader</Filter>
+    <ClInclude Include="Malody_Reader_Base\Process.hpp">
+      <Filter>MalodyReader\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Malody_Reader_Base\Read_Base.hpp">
+      <Filter>MalodyReader\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Malody_Reader_Base\Read_DataInGame.hpp">
+      <Filter>MalodyReader\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Malody_Reader_Base\Read_DataInResult.hpp">
+      <Filter>MalodyReader\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Malody_Reader_Base\Read_Game.hpp">
+      <Filter>MalodyReader\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Malody_Reader_Base\Read_LocalPlayer.hpp">
+      <Filter>MalodyReader\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Malody_Reader_Base\Read_Map.hpp">
+      <Filter>MalodyReader\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Malody_Reader_Base\Read_Mods.h">
+      <Filter>MalodyReader\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Malody_Reader_Base\Read_MpResultData.h">
+      <Filter>MalodyReader\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Malody_Reader_Base\Singleton.hpp">
+      <Filter>MalodyReader\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Malody_Reader_Base\Struct.hpp">
+      <Filter>MalodyReader\Base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
